@@ -66,19 +66,29 @@
 <body class="is-preload">
 
   <!-- Header (sticky) ripreso dallo stile originale -->
-  <header id="header">
-    <div class="inner">
-      <a href="#" class="image avatar"><img src="images/ritratto.jpg" alt="Avv. Nome Cognome" /></a>
-      <h1><strong>Avv. Nome Cognome</strong><br />
-      Studio Legale in Città<br />
-      Diritto civile • Contratti • Lavoro • Condominio • Recupero crediti</h1>
-      <ul class="actions" style="margin-top:1rem">
-        <li><a href="#studio" class="button">Lo Studio</a></li>
-        <li><a href="#aree" class="button">Aree di attività</a></li>
-        <li><a href="#contatti" class="button btn-primary">Contatti</a></li>
-      </ul>
+  <!-- Header (sticky con bottoni allineati a destra) -->
+<header id="header">
+  <div class="inner" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+    <!-- Avatar + Titolo -->
+    <div style="display:flex; align-items:center; gap:1rem;">
+      <a href="#" class="image avatar" style="flex-shrink:0;">
+        <img src="images/ritratto.jpg" alt="Avv. Nome Cognome" />
+      </a>
+      <h1 style="margin:0; font-size:1.2rem; line-height:1.4;">
+        <strong>Avv. Nome Cognome</strong><br/>
+        Studio Legale in Città<br/>
+        <span style="font-weight:400; font-size:0.9rem;">Civile • Contratti • Lavoro • Condominio • Crediti</span>
+      </h1>
     </div>
-  </header>
+
+    <!-- Bottoni navigazione -->
+    <ul class="actions" style="margin:0; display:flex; gap:0.5rem;">
+      <li><a href="#studio" class="button">Lo Studio</a></li>
+      <li><a href="#aree" class="button">Aree di attività</a></li>
+      <li><a href="#contatti" class="button btn-primary">Contatti</a></li>
+    </ul>
+  </div>
+</header>
 
   <!-- Main -->
   <div id="main">
@@ -345,3 +355,4 @@
 </body>
 </html>
 ```
+
