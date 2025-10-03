@@ -3219,3 +3219,60 @@ input, select, textarea {
 			}
 
 	}
+
+/* Layout header: tutto ben visibile nel pannello sinistro */
+#header .header-flex{
+  display:flex; 
+  flex-direction:column; 
+  align-items:center; 
+  text-align:center; 
+  gap:1rem;
+}
+
+/* Evita che il contenuto venga tagliato dal container */
+#header .inner { overflow: visible; }
+
+/* Titolo leggibile su immagine */
+#header .header-title,
+#header .header-title strong,
+#header .header-sub,
+#header a { color:#fff !important; }
+
+/* Ridimensiona un po' il titolo per evitare troncamenti */
+#header .header-title { 
+  margin:0; 
+  font-size:1.05rem; 
+  line-height:1.45; 
+}
+
+/* Azioni/bottoni dentro l’header */
+#header .header-actions{
+  display:flex; 
+  flex-wrap:wrap; 
+  justify-content:center; 
+  gap:.5rem; 
+  margin: .5rem 0 0 0;
+  width:100%;
+}
+
+/* Stile bottoni su sfondo scuro/foto  */
+#header .header-actions .button{
+  color:#fff !important;
+  border-color:rgba(255,255,255,.65);
+  background:transparent;
+}
+#header .header-actions .button:hover{
+  background:rgba(255,255,255,.12);
+}
+#header .header-actions .button.primary{
+  background:#ffffff; 
+  color:#0b2a4a !important; 
+  border-color:#ffffff;
+}
+
+/* Avatar: tienilo compatto e allinea tutto bene */
+#header .image.avatar img{ display:block; }
+#header .header-info{ display:flex; flex-direction:column; align-items:center; gap:.5rem; }
+
+/* Se vedi ancora testo “verde acqua” del tema, forza i link in header a bianco */
+#header a:not(.button){ color:#fff !important; }
