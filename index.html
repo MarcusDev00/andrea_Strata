@@ -1,9 +1,16 @@
+Di seguito trovi i file **completi** aggiornati con tutte le modifiche richieste: home con “Ultime attività” e pagina "Attività" con divisione per sezioni. Sostituisci i tuoi file con questi e personalizza nomi/dati/immagini.
+
+---
+
+## index.html (completo)
+
+```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Avv. Andrea Solari – Studio Legale • Cagliari</title>
+  <title>Avv. Nome Cognome – Studio Legale • Città</title>
   <meta name="description" content="Studio legale in Città. Diritto civile, contratti, lavoro, condominio e recupero crediti. Consulenze su appuntamento." />
   <link rel="canonical" href="https://www.tuodominio.tld/" />
   <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
@@ -14,7 +21,6 @@
   <meta property="og:image" content="https://www.tuodominio.tld/images/og-cover.jpg" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <style>
-    /* Ritocchi sobri per tono “classico” */
     body { color:#1a1a1a; }
     h1,h2,h3 { letter-spacing:.2px; }
     .btn-primary { background:#0b2a4a; color:#fff !important; border:0; }
@@ -25,7 +31,6 @@
     .contact-card h3 { margin-bottom:.25rem; }
     .required::after { content:" *"; color:#a00; }
   </style>
-  <!-- Schema.org (semplificato): personalizza i campi -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -52,11 +57,11 @@
   <header id="header">
     <div class="inner hero">
       <a href="/" class="image avatar">
-        <img src="images/portrait.jpg" alt="AS" loading="lazy" />
+        <img src="images/ritratto.jpg" alt="Avv. Nome Cognome" loading="lazy" />
       </a>
       <h1>
-        <strong>Avv. Andrea Solari</strong><br/>
-        Studio Legale in Città di Cagliari
+        <strong>Avv. Nome Cognome</strong><br/>
+        Studio Legale in Città
       </h1>
       <p class="muted">Diritto civile • Contratti • Lavoro • Condominio • Recupero crediti</p>
       <p>
@@ -69,7 +74,7 @@
   <!-- Main -->
   <div id="main">
 
-    <!-- Intro / Studio -->
+    <!-- Studio -->
     <section id="studio">
       <header class="major">
         <h2>Studio</h2>
@@ -85,41 +90,42 @@
       </ul>
     </section>
 
-    <!-- Aree di Attività (ex “Recent Work”) -->
+    <!-- Aree di Attività con ULTIME ATTIVITÀ + link alla pagina completa -->
     <section id="aree">
       <h2>Aree di attività</h2>
-      <div class="row">
-        <article class="col-6 col-12-xsmall work-item">
-          <span class="image fit thumb"><img src="images/thumbs/civile.jpg" alt="Diritto civile" loading="lazy" /></span>
-          <h3>Diritto civile</h3>
-          <p>Obbligazioni, responsabilità, risarcimento danni.</p>
-        </article>
-        <article class="col-6 col-12-xsmall work-item">
-          <span class="image fit thumb"><img src="images/thumbs/contratti.jpg" alt="Contratti" loading="lazy" /></span>
-          <h3>Contratti</h3>
-          <p>Redazione, revisione e negoziazione.</p>
-        </article>
-        <article class="col-6 col-12-xsmall work-item">
-          <span class="image fit thumb"><img src="images/thumbs/lavoro.jpg" alt="Diritto del lavoro" loading="lazy" /></span>
-          <h3>Lavoro</h3>
-          <p>Licenziamenti, demansionamento, TFR.</p>
-        </article>
-        <article class="col-6 col-12-xsmall work-item">
-          <span class="image fit thumb"><img src="images/thumbs/condominio.jpg" alt="Condominio" loading="lazy" /></span>
-          <h3>Condominio</h3>
-          <p>Controversie tra condomini e con l’amministratore.</p>
-        </article>
-        <article class="col-6 col-12-xsmall work-item">
-          <span class="image fit thumb"><img src="images/thumbs/recupero.jpg" alt="Recupero crediti" loading="lazy" /></span>
-          <h3>Recupero crediti</h3>
-          <p>Diffide, decreti ingiuntivi ed esecuzioni.</p>
-        </article>
-        <article class="col-6 col-12-xsmall work-item">
-          <span class="image fit thumb"><img src="images/thumbs/locazioni.jpg" alt="Locazioni" loading="lazy" /></span>
-          <h3>Locazioni</h3>
-          <p>Sfratti, canoni e restituzioni.</p>
-        </article>
-      </div>
+      <p class="muted">Di seguito alcune <strong>attività recenti</strong>. L’elenco completo, organizzato per materia, è nella pagina dedicata.</p>
+
+      <h3>Ultime attività</h3>
+      <ul class="alt">
+        <li>
+          <strong>Opposizione a decreto ingiuntivo</strong> – assistenza a PMI settore logistico;
+          <time datetime="2025-09-18">18 settembre 2025</time>, Foro di Cagliari.
+        </li>
+        <li>
+          <strong>Redazione e negoziazione contratto di fornitura</strong> con clausole di riservatezza e penali;
+          <time datetime="2025-09-10">10 settembre 2025</time>.
+        </li>
+        <li>
+          <strong>Impugnazione licenziamento individuale</strong> – ottenuta reintegrazione e risarcimento;
+          <time datetime="2025-08-29">29 agosto 2025</time>, Trib. del Lavoro di Sassari.
+        </li>
+        <li>
+          <strong>Sfratto per morosità</strong> e convalida con ordinanza di rilascio;
+          <time datetime="2025-08-06">6 agosto 2025</time>, Foro di Nuoro.
+        </li>
+        <li>
+          <strong>Transazione stragiudiziale</strong> in materia di responsabilità civile (sinistro stradale);
+          <time datetime="2025-07-22">22 luglio 2025</time>.
+        </li>
+        <li>
+          <strong>Recupero crediti</strong> per fornitura tecnologica B2B – decreto ingiuntivo provvisoriamente esecutivo;
+          <time datetime="2025-07-05">5 luglio 2025</time>.
+        </li>
+      </ul>
+
+      <p style="margin-top:1rem">
+        <a class="button btn-primary" href="attivita.html">Tutte le attività per sezione</a>
+      </p>
     </section>
 
     <!-- Approccio -->
@@ -164,7 +170,6 @@
                 <label for="message" class="required">Messaggio</label>
                 <textarea name="message" id="message" rows="5" required></textarea>
               </div>
-              <!-- Honeypot -->
               <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" />
               <div class="col-12">
                 <label><input type="checkbox" name="privacy" required /> Ho letto e accetto l’<a href="/privacy.html">informativa privacy</a>.</label>
@@ -188,10 +193,6 @@
           <a href="https://www.linkedin.com/in/tuoprofilo/">/in/tuoprofilo</a>
         </div>
       </div>
-      <!-- Mappa (se utile) -->
-      <!-- <div class="map" style="margin-top:1rem">
-        <iframe title="Mappa Studio" src="https://www.google.com/maps/embed?..."></iframe>
-      </div> -->
     </section>
   </div>
 
@@ -211,12 +212,129 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="assets/js/browser.min.js" defer></script>
   <script src="assets/js/breakpoints.min.js" defer></script>
   <script src="assets/js/util.js" defer></script>
   <script src="assets/js/main.js" defer></script>
 </body>
 </html>
+```
 
+---
 
+## attivita.html (completo)
+
+```html
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Attività – Studio Legale Avv. Nome Cognome</title>
+  <meta name="description" content="Attività recenti e archivio per materia: civile, contratti, lavoro, condominio, recupero crediti, locazioni." />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="is-preload">
+
+  <header id="header">
+    <div class="inner">
+      <a href="index.html" class="image avatar"><img src="images/ritratto.jpg" alt="Avv. Nome Cognome" /></a>
+      <h1><strong>Attività dello Studio</strong><br/> Selezione di incarichi recenti, organizzati per materia.</h1>
+    </div>
+  </header>
+
+  <div id="main">
+    <nav aria-label="Sezioni attività" style="margin-bottom:1rem">
+      <ul class="actions small">
+        <li><a href="#civile" class="button">Civile</a></li>
+        <li><a href="#contratti" class="button">Contratti</a></li>
+        <li><a href="#lavoro" class="button">Lavoro</a></li>
+        <li><a href="#condominio" class="button">Condominio</a></li>
+        <li><a href="#recupero" class="button">Recupero crediti</a></li>
+        <li><a href="#locazioni" class="button">Locazioni</a></li>
+      </ul>
+    </nav>
+
+    <section id="civile">
+      <header class="major"><h2>Civile</h2></header>
+      <ul class="alt">
+        <li><strong>RC auto – sinistro con lesioni</strong>: definizione bonaria con compagnia; <time datetime="2025-07-22">lug 2025</time>.</li>
+        <li><strong>Responsabilità professionale</strong>: parere pro veritate e successiva mediazione; <time datetime="2025-06-14">giu 2025</time>.</li>
+        <li><strong>Opposizione a precetto</strong>: sospensione dell’esecuzione; <time datetime="2025-05-09">mag 2025</time>.</li>
+      </ul>
+    </section>
+
+    <section id="contratti">
+      <header class="major"><h2>Contratti</h2></header>
+      <ul class="alt">
+        <li><strong>Fornitura software B2B</strong>: master service agreement con SLA; <time datetime="2025-09-10">set 2025</time>.</li>
+        <li><strong>Accordo di riservatezza (NDA)</strong>: versione bilaterale con durata 36 mesi; <time datetime="2025-04-18">apr 2025</time>.</li>
+        <li><strong>Appalto</strong>: revisione clausole penali e garanzia; <time datetime="2025-03-28">mar 2025</time>.</li>
+      </ul>
+    </section>
+
+    <section id="lavoro">
+      <header class="major"><h2>Lavoro</h2></header>
+      <ul class="alt">
+        <li><strong>Impugnazione licenziamento</strong>: reintegra e risarcimento; <time datetime="2025-08-29">ago 2025</time>.</li>
+        <li><strong>Mobbing/straining</strong>: ricorso cautelare respinto; assistenza in merito; <time datetime="2025-06-03">giu 2025</time>.</li>
+        <li><strong>Trasferimento aziendale</strong>: verifica clausole e informativa; <time datetime="2025-02-17">feb 2025</time>.</li>
+      </ul>
+    </section>
+
+    <section id="condominio">
+      <header class="major"><h2>Condominio</h2></header>
+      <ul class="alt">
+        <li><strong>Impugnazione delibera assembleare</strong>: vizi di convocazione; <time datetime="2025-05-30">mag 2025</time>.</li>
+        <li><strong>Rumori molesti</strong>: diffida e accordo transattivo; <time datetime="2025-03-10">mar 2025</time>.</li>
+      </ul>
+    </section>
+
+    <section id="recupero">
+      <header class="major"><h2>Recupero crediti</h2></header>
+      <ul class="alt">
+        <li><strong>Decreto ingiuntivo provv. esecutivo</strong> per fornitura B2B; <time datetime="2025-07-05">lug 2025</time>.</li>
+        <li><strong>Pignoramento presso terzi</strong> su crediti commerciali; <time datetime="2025-04-02">apr 2025</time>.</li>
+      </ul>
+    </section>
+
+    <section id="locazioni">
+      <header class="major"><h2>Locazioni</h2></header>
+      <ul class="alt">
+        <li><strong>Sfratto per morosità</strong>: convalida e rilascio; <time datetime="2025-08-06">ago 2025</time>.</li>
+        <li><strong>Rinegoziazione canone</strong> uso commerciale; <time datetime="2025-01-23">gen 2025</time>.</li>
+      </ul>
+    </section>
+
+    <p style="margin-top:2rem"><a href="index.html" class="button">Torna alla home</a></p>
+  </div>
+
+  <footer id="footer">
+    <div class="inner">
+      <ul class="icons">
+        <li><a href="mailto:info@tuodominio.tld" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        <li><a href="https://www.linkedin.com/in/tuoprofilo/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+      </ul>
+      <ul class="copyright">
+        <li>&copy; Studio Legale Avv. Nome Cognome</li>
+        <li><a href="/privacy.html">Privacy</a> • <a href="/cookie.html">Cookie</a> • <a href="/note-legali.html">Note legali</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/js/browser.min.js" defer></script>
+  <script src="assets/js/breakpoints.min.js" defer></script>
+  <script src="assets/js/util.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
+```
+
+---
+
+### Note operative
+
+* Aggiorna **nomi/città/fori/contatti**.
+* Sostituisci le **immagini** in `/images/thumbs/*.jpg` con soggetti neutri (tribunale, codici, dettaglio studio) e alt text adeguati.
+* Se non usi gallerie, puoi rimuovere jQuery/poptrox dal progetto; i file qui referenziati sono solo gli essenziali con `defer`.
+* Per aggiornare le “Ultime attività”, aggiungi/rimuovi `<li>` nella lista in home; le sezioni complete vivono su `attivita.html`.
