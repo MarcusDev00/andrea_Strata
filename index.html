@@ -65,30 +65,28 @@
 </head>
 <body class="is-preload">
 
-  <!-- Header (sticky) ripreso dallo stile originale -->
-  <!-- Header (sticky con bottoni allineati a destra) -->
+<!-- Header fisso a sinistra con bottoni visibili -->
 <header id="header">
-  <div class="inner" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+  <div class="inner header-flex">
     <!-- Avatar + Titolo -->
-    <div style="display:flex; align-items:center; gap:1rem;">
-      <a href="#" class="image avatar" style="flex-shrink:0;">
-        <img src="images/ritratto.jpg" alt="Avv. Nome Cognome" />
-      </a>
-      <h1 style="margin:0; font-size:1.2rem; line-height:1.4;">
-        <strong>Avv. Nome Cognome</strong><br/>
-        Studio Legale in Città<br/>
-        <span style="font-weight:400; font-size:0.9rem;">Civile • Contratti • Lavoro • Condominio • Crediti</span>
+    <div class="header-info">
+      <a href="#" class="image avatar"><img src="images/ritratto.jpg" alt="Avv. Andrea Solari" /></a>
+      <h1 class="header-title">
+        <strong>Avv. Andrea Solari</strong><br />
+        Studio Legale in Città<br />
+        <span class="header-sub">Civile • Contratti • Lavoro • Condominio • Crediti</span>
       </h1>
     </div>
 
-    <!-- Bottoni navigazione -->
-    <ul class="actions" style="margin:0; display:flex; gap:0.5rem;">
+    <!-- Bottoni dentro l'header -->
+    <ul class="actions header-actions">
       <li><a href="#studio" class="button">Lo Studio</a></li>
       <li><a href="#aree" class="button">Aree di attività</a></li>
-      <li><a href="#contatti" class="button btn-primary">Contatti</a></li>
+      <li><a href="#contatti" class="button primary">Contatti</a></li>
     </ul>
   </div>
 </header>
+
 
   <!-- Main -->
   <div id="main">
@@ -355,4 +353,5 @@
 </body>
 </html>
 ```
+
 
