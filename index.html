@@ -1,7 +1,3 @@
-Di seguito trovi i file **completi** aggiornati con tutte le modifiche richieste: home con “Ultime attività” e pagina "Attività" con divisione per sezioni. Sostituisci i tuoi file con questi e personalizza nomi/dati/immagini.
-
----
-
 ## index.html (completo)
 
 ```html
@@ -53,23 +49,33 @@ Di seguito trovi i file **completi** aggiornati con tutte le modifiche richieste
 </head>
 <body class="is-preload">
 
-  <!-- Header / Hero -->
-  <header id="header">
-    <div class="inner hero">
-      <a href="/" class="image avatar">
-        <img src="images/ritratto.jpg" alt="Avv. Nome Cognome" loading="lazy" />
-      </a>
-      <h1>
-        <strong>Avv. Nome Cognome</strong><br/>
-        Studio Legale in Città
-      </h1>
-      <p class="muted">Diritto civile • Contratti • Lavoro • Condominio • Recupero crediti</p>
-      <p>
-        <a href="#contatti" class="button btn-primary">Prenota una consulenza</a>
-        <a href="#aree" class="button">Aree di attività</a>
-      </p>
-    </div>
-  </header>
+Ok, ripristiniamo lo stile originario della testata dell’index (immagine + titolo + pulsanti di navigazione), ma mantenendo tutti gli aggiornamenti fatti al resto del sito (Ultime attività, contatti, footer ecc.). Ecco la nuova versione della parte **header** dell’`index.html`:
+
+```html
+<!-- Header -->
+<header id="header">
+  <div class="inner">
+    <a href="#" class="image avatar"><img src="images/portrait.jpg" alt="Avv. Nome Cognome" /></a>
+    <h1><strong>Avvocato Andrea Solari</strong><br />
+    Studio Legale Città di Cagliari<br />
+    Diritto civile • Contratti • Lavoro • Condominio • Recupero crediti</h1>
+    <ul class="actions" style="margin-top:1rem">
+      <li><a href="#studio" class="button">Lo Studio</a></li>
+      <li><a href="#aree" class="button">Aree di attività</a></li>
+      <li><a href="#contatti" class="button btn-primary">Contatti</a></li>
+    </ul>
+  </div>
+</header>
+```
+
+Con questa soluzione:
+
+* Mantieni l’aspetto originale del template (immagine tonda + titolo dentro il box centrale).
+* Ho aggiornato i testi per tono legale e serio.
+* I tre pulsanti portano direttamente alle sezioni principali della pagina (`Lo Studio`, `Aree di attività`, `Contatti`).
+
+👉 Ti basta sostituire la sezione `<header id="header"> ... </header>` del tuo `index.html` con questa. Tutto il resto (Ultime attività, Attività per sezione, contatti, footer) resta invariato.
+
 
   <!-- Main -->
   <div id="main">
@@ -338,3 +344,4 @@ Di seguito trovi i file **completi** aggiornati con tutte le modifiche richieste
 * Sostituisci le **immagini** in `/images/thumbs/*.jpg` con soggetti neutri (tribunale, codici, dettaglio studio) e alt text adeguati.
 * Se non usi gallerie, puoi rimuovere jQuery/poptrox dal progetto; i file qui referenziati sono solo gli essenziali con `defer`.
 * Per aggiornare le “Ultime attività”, aggiungi/rimuovi `<li>` nella lista in home; le sezioni complete vivono su `attivita.html`.
+
